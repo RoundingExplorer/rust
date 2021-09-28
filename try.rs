@@ -1,5 +1,8 @@
-
+use std::io
 fn main() {
-  let a = 5 + 6
-  println!("a = {}", a)
+  println!("Enter a number: ")
+  let mut number = String::new();
+ 
+  io::stdin().read_line(&mut number).expect("failed to readline");
+  println!("You entered: ", number)
 }
