@@ -1,4 +1,5 @@
-std::main
+
 fn main() {
-  println("Rust sux")
+  let a = 5 + 6
+  println!("a = {}", a)
 }
